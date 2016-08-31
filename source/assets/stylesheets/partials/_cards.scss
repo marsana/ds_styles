@@ -1,0 +1,906 @@
+.banners {
+    margin-top: 20px;
+
+    a.banner-card {
+        display: block;
+        cursor: pointer;
+        overflow: hidden;
+        margin-top: 10px;
+        color: $header-text-color;
+        position: relative;
+        min-height: 378px;
+        .substrate-banner:after {
+            overflow: hidden;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0px;
+            bottom: 0;
+            right: 0px;
+            background-color: rgba(0,0,0,.5);
+            opacity: 0;
+            transition: opacity .2s;
+        }
+        @media (min-width: 768px) {
+            &:hover .substrate-banner {   
+                transform: scale(1.1);
+                
+                &:after {
+
+                    opacity: 1;
+                }
+
+            }
+        }
+        .share {
+            fill: $header-text-color;
+        }
+        .banner-content-wrapper-top {
+            position: absolute;
+            padding-left: 25px; 
+            padding-top: 20px;
+            top: 0;
+            left: 0;
+        }
+
+        .banner-persone-name {
+            font-size: 24px;
+            line-height: 22px;
+            font-weight: bold;
+        }
+
+        .banner-persone-status {
+            font-family: 'Baskerville';
+            font-style: italic;
+            font-size: 24px;
+            line-height: 22px;
+            margin-top: 5px;
+        }
+
+        .substrate-banner-wrapper {
+            overflow: hidden;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+        }
+        .substrate-banner{
+            position: absolute;
+            top:0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            transition: all .3s;
+        
+        }   
+
+        &:nth-child(2n-1) .substrate-banner-wrapper {
+            right: 5px;
+        }
+        &:nth-child(2n) .substrate-banner-wrapper {
+            left: 5px; 
+        }   
+
+        .banner-content-wrapper {
+            padding-left: 25px; 
+            position: absolute;
+            bottom: 0px;
+        }
+        &:nth-child(2n) .banner-content-wrapper{
+            padding-left: 20px;
+        }
+        &:nth-child(2n) .banner-content-wrapper-top, {
+            padding-left: 20px;
+        }
+        &:nth-child(2n) .banner-content-wrapper-all {
+            padding-left: 20px !important;
+        }
+        &:nth-child(2n) .banner-share {
+            right: 20px;
+        }
+
+
+
+        h3 {  
+            font-size: 36px !important;
+            line-height: 34px;
+            margin-bottom: 0px !important;
+            span {
+                font-family: 'Baskerville', serif;
+                display: block;
+                font-weight: normal;
+                font-style: italic;
+                font-size: 20px;
+                margin-top: 0px;
+            }
+
+            .title {
+                padding-right: 20px;
+                display: inline;
+                white-space: normal;
+            }
+
+            .arrow{
+                // position: absolute;
+                white-space: nowrap;
+                margin-left: -10px;
+                display: inline-block;
+            }
+        }
+        .banner-content {
+            width: 83%;
+            margin-top: -5px;
+            font-size: 18px;
+            line-height: 20px;
+        }
+        .banner-share {
+            position: absolute;
+            bottom: 15px;
+            right: 20px;
+            .share-open {
+                opacity: 0;
+                text-align: center;
+                div {
+
+                    margin-bottom: 25px;
+                    transition: all .2s;
+                    &:hover {
+                        fill: $hover-link-color;
+                    }
+                }
+                transition: all .2s;
+            }
+            &:hover .share-open {
+                opacity: 1;
+            }
+        }
+
+
+        &.how-to-join-card {
+            .span.right.discipline-note {
+                float: right;
+                margin-top: 30px;
+
+                font-size: 16px;
+                line-height: 22px;
+            }
+            h2 { 
+                float: left;
+                margin-top: 30px;
+                margin-bottom: 20px;
+
+
+            }
+            .discipline-content {
+                text-align: left !important;
+                padding-left: 30px !important;
+                font-size: 16px !important;
+                line-height: 22px !important;
+                margin-top:  -10px !important;
+                p {
+                    margin-top: 0px !important;
+                    margin-bottom: 0px !important;
+                }
+
+
+            }
+            .banner-content-wrapper-all {
+                padding-left: 15px; 
+                position: relative;
+                padding-right: 15px;
+                width: 83%;
+            }
+            .banner-title h3 {
+                margin-top: 20px;
+                margin-bottom: 25px; 
+                margin-left: -1px;
+
+            }
+
+            
+
+
+
+            .discipline-note {
+                font-family: 'Baskerville', serif;
+                font-style: italic;
+                font-size: 16px;
+                color: white;
+                line-height: 22px;
+                margin-bottom: -10px;
+                text-align: right;
+            }
+
+            .discipline {
+                clear: both;
+                margin-top: 40px;
+                &.discipline-border {
+                    position: relative;
+                    height: 20px;
+                    // border-bottom: .5px solid white;
+                }
+                .discipline-name {
+                    position: absolute; 
+                    top: 1px;
+                    left: 0px;
+                    display: block;
+                    // background-color: #ffc830;
+                    padding-right:10px; 
+                    font-weight: normal;
+                    text-transform: lowercase;
+                    font-size: 18px;
+                    line-height: 20px;
+
+                }
+                .discipline-mark {
+                    font-weight: bold;
+                    font-size: 32px;
+                    color: white;
+                    line-height: 39px;
+                    position: absolute;
+                    // height: 100%;
+                    top:-10px;
+                    padding-left:10px;
+                    right: 0px;
+                    // background-color: #ffc830;
+                    display: block;
+
+                }
+
+            }
+            .discipline-list, .work-list {
+               padding-left: 30px;
+            }
+
+
+
+
+        }
+
+    }
+
+}
+
+
+
+.how-to-join {
+    table {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    th {
+        vertical-align: bottom;
+        padding-bottom: 20px;
+        h3 {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 0;
+            text-align: left;
+        }
+        span {
+            text-align: right;
+            font-family: 'Baskerville', serif;
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: normal;
+            font-style: italic;
+        }
+    }
+    td:nth-child(2n) {
+        width: 123px;
+        text-align: right;
+        font-size: 36px;
+        line-height: 41px;
+        font-family: 'Baskerville', serif;
+        font-style: italic;
+        padding-top: 10px;;
+    }
+    td {
+        vertical-align: middle;
+    }
+    td:nth-child(2n-1) {
+        font-size: 20px;
+        line-height: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-transform: lowercase;
+    }
+    .interview {
+        margin-top: -20px;
+        padding-left: 20px;
+        h6 {
+            text-transform: lowercase;
+            font-size: 14px;
+            line-height: 25px;
+            font-weight: normal;
+            margin: 10px 0 0 0;
+        }
+        p {
+            text-transform: lowercase;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        font-size: 14px;
+        line-height: 25px;
+        a {
+            font-family: 'Baskerville', serif;
+            color: $link-color;
+            font-style: italic;
+            transition: all .2s;
+        }
+
+    }
+
+    .olympiad-link {
+        margin-top: -15px;
+        a {
+            font-size: 14px;
+            line-height: 25px;
+            font-family: 'Baskerville', serif;
+            color: $link-color;
+            font-style: italic;
+            transition: all .2s;
+        }
+    }
+        
+}
+
+
+
+
+.substrate {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &.substrate-lab {
+        background-position: right 0 bottom 20%;
+        background-size: 33%;
+        // background-image: image_url('programming/substrate-lab.png');
+    }
+    &.substrate-open-days {
+        // background-position: center bottom 0;
+        // background-size: 100%;
+        // background-image: image_url('programming/substrate-open-days.png');
+    }
+    &.substrate-color {
+        padding-top: 50px;
+        background: rgba(217,217,217,0.23);
+        box-shadow: inset 0px 1px 12px 0px rgba(0,0,0,0.10);
+    }
+}
+
+.profile {
+
+
+
+
+    .banner-full {
+        color: $header-text-color;
+        position: relative;
+        max-height: 757px;
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        .swiper-container {
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-left: -5px;
+        margin-right: -5px;
+            max-height: 757px;
+        
+            .swiper-slide {
+            background-position: center center !important;
+
+            }
+        }
+        .banner-content-wrapper {
+            position: absolute;
+            bottom: 70px;
+        }
+        h3 {  
+            font-size: 24px !important;
+            span {
+                font-family: 'Baskerville', serif;
+                display: block;
+                font-weight: normal;
+                font-style: italic;
+                font-size: 20px;
+                margin-top: 5px;
+            }
+        }
+
+        .banner-content {
+            margin-top: 25px;
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+
+    a.banner-small {
+
+        max-width: 100%;
+        cursor: pointer !important;
+        display: block;
+        color: $header-text-color !important;
+        position: relative;
+
+
+
+        &:before {
+            content: " ";
+            display: inline-block;
+            height: 100%;
+            // width: 1%;
+            vertical-align: bottom;
+        }
+        .banner-content-wrapper {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            display: inline-block;
+            vertical-align: bottom;
+        }
+        .banner-type, .banner-line {
+            font-size: 24px;
+            line-height: 27px;
+            font-style: italic;
+            font-family: 'Baskerville', serif;
+            font-weight: normal;
+            text-transform: lowercase;
+
+        }
+        .banner-title h2{
+            font-size: 33px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .banner-line {
+            height: 3px;
+            overflow: hidden;
+            display: inline-block;
+            position: relative;
+            &:after {
+                position: absolute;
+                top: 0;
+                content: '';
+                height: 3px;
+                width: 100%;
+            }
+        }
+        &.banner-interview .banner-line:after {
+            background-color: $banner-interview-color;
+        }
+        .banner-content-wrapper-top-left {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding-top: 15px;
+            padding-left: 20px;
+        }
+        .banner-content-wrapper-top-right {
+            position: absolute;
+            top: -10px;
+            right: 0;
+
+
+        }
+
+        .banner-datatime-wrapper, .banner-place {
+            float: left;
+            // margin-top: 20px;
+            // padding-top: 10px;
+            // padding-left: 20px;
+            margin-right: 5px;
+        }
+        .banner-datatime-wrapper {
+            margin-right: 20px;
+        }
+        .banner-button-action {
+            border: 2px solid $header-text-color;
+            padding: 10px 25px;
+            text-transform: lowercase;
+            font-weight: bold;
+            font-size: 16.79px;
+            line-height: 20px;
+            border-right-width: 0;
+            margin-top: 37px;
+        }
+
+        .banner-data {
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 29px;
+        }
+
+        .banner-time {
+            font-family: 'Baskerville', serif;
+            font-size: 24px;
+            line-height: 28px;            
+        }
+        .banner-place {
+            font-weight: bold;
+            font-size: 21.59px;
+            line-height: 30px;    
+            .address {
+                font-family: 'Baskerville', serif;
+                font-style: italic;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 27px;
+            }
+        }
+
+
+
+    
+
+    }
+
+    .open-days-banner {
+        position: relative;
+        display: block;
+        margin: 65px auto 120px;
+        width: 715px;
+        height: 375px;
+        background-color: #33659F;
+        background: image_url('open-days-banner.png');
+    }
+
+}
+    .substrate {
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        &.substrate-lab {
+            background-position: right 0 bottom 20%;
+            background-size: 33%;
+            // background-image: image_url('programming/substrate-lab.png');
+        }
+        &.substrate-open-days {
+            // background-position: center bottom 0;
+            // background-size: 100%;
+            // background-image: image_url('programming/substrate-open-days.png');
+        }
+        &.substrate-color {
+            padding-top: 50px;
+            background: rgba(217,217,217,0.23);
+            box-shadow: inset 0px 1px 12px 0px rgba(0,0,0,0.10);
+        }
+    }
+
+
+.profile {
+
+
+
+
+    @media (max-width: 992px) {
+
+
+        .banner-full { 
+            min-height: auto;
+
+            
+            // .banner-content-wrapper {
+            //     position: relative;
+            //     bottom: auto;
+            // }
+
+        }
+        .banner-content {
+            padding: 10px;
+            // margin-top: 100px;
+            font-size: 14px;
+            line-height: 18px;
+        }
+        .banner-content-wrapper {
+            bottom: 10px !important;
+            top: auto  !important;
+            .banner-title h3{
+                margin: 0;
+                margin-bottom: -30px;
+            }
+        }
+
+    }
+
+
+
+    @media (max-width: 630px) {
+        .banner-content-wrapper-top-right {
+            top:80px !important;
+        }
+    }
+
+    @media (max-width: 401px) {
+        .banner-content-wrapper-top-right {
+            top:-10px !important;
+        }
+    }
+}
+
+
+
+    @media (max-width: 766px) {
+        .substrate.substrate-color {
+            padding-top: 0px;
+        }
+    }
+
+
+
+    .banner-card .substrate-banner{ 
+        bottom: 0;
+        position: absolute;
+        min-height: 378px;
+        top:0;
+        margin: 0 auto;
+    }
+    .profile .banner-full {
+        min-height: auto;
+    }
+.profile .banner-full .swiper-container.ss-slider {
+    height: 600px;
+}
+
+
+
+
+
+.ss-slider {
+    position: relative;
+}
+.swiper-ss-button-next, .swiper-ss-button-prev {
+    svg {
+        background-size: 21px;
+    }
+    height: 21px;
+        margin-top: 10.5px;
+}
+.swiper-button-next.swiper-ss-button-next {
+    right: 10px;
+      background-image: image_url('svg/arrow_next_2.svg');
+}
+
+
+.qu-slider .quote a, .qu-main-slider .quote a {
+    color: rgb(27, 104, 255);
+}
+
+
+.ss-slider {
+    height: 600px;
+}
+.th-slider, .ss-slider {
+    .swiper-slide {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; 
+    }
+    
+}
+
+
+
+    @media (max-width: 1462px) {
+
+        .banners a.banner-card {
+            min-height: 315px;
+            .arrow {display: none!important;}
+        }
+    }
+    @media (max-width: 1200px) {
+        .banners a.banner-card {
+            min-height: 254px;
+            .banner-content-wrapper {
+                bottom: 20px;
+            }
+             .banner-content {
+                display: none;
+            }
+        }
+    }
+
+
+    @media (max-width: 1200px) {
+
+        .banners .banner-card h3 {
+            width: 80%;
+        }
+        .banners .banner-card.how-to-join-card .discipline {
+            margin-top: 0px !important;
+        }
+        .banners .banner-card.how-to-join-card h2 {
+            margin-top: 15px !important;
+            margin-bottom: -10px !important;
+        }
+
+        .banners .banner-card.how-to-join-card .span.right.discipline-note {
+
+            margin-top: 17px !important;
+            margin-bottom: 10px !important;
+
+        }
+        .banners a.banner-card h3 .title {
+            padding-right: 0px !important;
+        }
+    }
+
+
+    @media (max-width: 992px) {
+
+        .banners a.banner-card {
+            min-height: 392px;
+
+            .banner-content {
+                display: block;
+            }
+            .banner-content-wrapper {
+                bottom: 0px;
+            }
+        }
+    }
+
+    @media (max-width: 992px) {
+
+
+        .banner-card:nth-child(2n-1) .substrate-banner-wrapper {
+            right: 0px !important; 
+        }
+        .banner-card:nth-child(2n) .substrate-banner-wrapper {
+            left: 0px !important;
+        } 
+    }
+
+
+    @media (max-width: 992px) {
+
+
+
+        .how-to-join-card .banner-content-wrapper-all {
+            padding-top: 1px;
+        }
+    }
+
+
+
+    @media (max-width: 992px) {
+
+
+
+        .banners .banner-card.how-to-join-card .discipline {
+            margin-top: 40px !important;
+        }
+        .banners .banner-card.how-to-join-card h2 {
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .banners .banner-card.how-to-join-card .span.right.discipline-note {
+
+            margin-top: 17px !important;
+            margin-bottom: -10px;
+
+        }
+    }
+
+
+    @media (max-width: 768px) {
+
+
+        .banners a.banner-card h3 {  
+            width: 100%;
+            padding-right: 40px;
+            font-size: 22px !important;
+            line-height: 27px;
+            .arrow {
+                display: none;
+            }
+        }
+        .banners a.banner-card .banner-content-wrapper-top {
+            &:nth-child(2n) {
+                padding-left: 10px !important;
+            }
+            padding-left: 10px;
+        }
+        .banners a.banner-card .banner-content-wrapper {
+            &:nth-child(2n) {
+                padding-left: 10px !important;
+            }
+
+            bottom: 15px;
+            padding-left: 10px !important;
+        }
+        .banners .banner-card .banner-content {
+            // margin-top: -5px;
+         //    font-size: 14px;
+         //    line-height: 18px;
+            // display: none;
+        }
+        .banners a.banner-card {
+            min-height: 320px;
+            margin-top: 5px;
+            .banner-content {
+                // display: none;
+            }
+        }
+
+        .banners {
+            .banner-persone-name {
+                font-size: 18px !important;
+                line-height: 20px !important;
+            }
+            .banner-persone-status {
+                font-size: 20px !important;
+                line-height: 18px !important;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+
+
+        .banners a.banner-card .banner-content-wrapper-all,
+        .banners a.banner-card:nth-child(2n) .banner-content-wrapper-all {
+            width: 100%;
+            padding-right: 60px;
+            padding-left: 10px !important;
+        }
+
+        .banners a.banner-card.how-to-join-card .discipline {
+            &.discipline-border {
+                height: 10px;
+            }
+            margin-top: 0px !important;
+            .discipline-name {
+                font-size: 15px;
+            }
+            .discipline-mark {
+                font-size: 18px;
+            }
+        }
+        .banners .banner-card.how-to-join-card h2 {
+            margin-top: 15px !important;
+            margin-bottom: -10px !important;
+        }
+
+        .banners .banner-card.how-to-join-card .span.right.discipline-note {
+            font-size: 14px !important;
+            margin-top: 17px !important;
+            margin-bottom: 0px !important;
+
+        }
+        .banners .banner-card.how-to-join-card .discipline {
+            margin-top: 10px;
+        }
+        .banner-card.how-to-join-card {
+            h3 {display: none;}
+            h2 {
+                margin-bottom: 5px !important;
+            }
+            h2 + .discipline-note {
+                position: static !important;
+                width:100%;
+                margin-top: 0 !important;
+                margin-bottom: 20px !important;
+            }
+        }
+
+    }
+
+    @media (max-width: 470px) {
+
+        .banners a.banner-card {
+            min-height: 203px;
+            .banner-content {
+                display: none;
+            }
+        }
+    }
+
+

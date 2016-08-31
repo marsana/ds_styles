@@ -1,0 +1,140 @@
+---
+project: magistracy
+title: Магистратура Школы дизайна НИУ ВШЭ
+titleContent: Магистерская программа «Коммуникационный Дизайн»
+description: "Программа разработана для людей оригинально мыслящих, неравнодушных к визуальному окружению и стремящихся его улучшить."
+---
+= partial :action
+.container
+    = image_tag "data/mag_02.png", class: "mag-header-image"
+.container.bachelor.magistracy.main
+    .row.header
+        .row
+            .col-lg-7.col-md-8.col-sm-8.bottom
+                %h1
+                    %span 
+                    %a.magistracy-color-link{:href => "http://design.hse.ru/magistracy"} Магистратура
+                = partial :header_share, locals: {link: "magistracy"} 
+            .col-md-4.col-sm-4.col-xs-12.col-md-pull-0.col-lg-pull-1.bottom.get-consultation-button
+                %a.hse-menu__button.popUp{:href => "#", :data => { class: ".comm"}} Получить&nbsp;консультацию
+= partial :white_hse_menu
+.container.bachelor.magistracy.main
+    .content.about-program.text-with-banner
+        .row 
+            .col-xs-12
+                .mm-edi{data:{name:'mag_program_comm_attention_text'}}= "<%= block 'mag_program_comm_attention_text' %>" 
+        .row
+            .col-lg-7.col-md-8.about-profile-program
+                .mm-edi{data:{name:'mag_program_comm_declaration_text'}}= "<%= block 'mag_program_comm_declaration_text' %>" 
+        .row.about-profile-program
+            %h2 
+                %a{:href => "http://design.hse.ru/mag-comm"} Программа &laquo;Коммуникационный дизайн&raquo;
+            .col-lg-5.col-md-12.about-profile-program
+                .mm-edi{data:{name:'mag_program_comm_intro_text'}}= "<%= block 'mag_program_comm_intro_text' %>"
+            .col-lg-offset-1.col-lg-3.col-md-4.col-sm-12.col-xs-12.bachelor-info.bachelor-info-main
+                .bachelor-info-wrapper
+                    .info-item
+                        %span 2 года
+                        очная форма обучения
+                    .info-item
+                        %span 0
+                        бюджетных мест
+                    .info-item
+                        %span 20
+                        коммерческих мест
+                    .info-item
+                        %span.no-right-offset 320 000 
+                        руб
+                    .info-item
+                        %span RUS
+                        обучение на&nbsp;русском языке
+                    .info-item
+                        Государственная аккредитация
+                    .bachelor-info-additional
+                        .info-item
+                            Программу ведет: 
+                            %span 
+                                %a.link-hse-1{:href => "https://cmd.hse.ru", :target => "_blank", :style => "color:#000 !important"} Факультет коммуникаций, медиа и&nbsp;дизайна
+                    .bachelor-info-links
+                        .info-item
+                            %a{href:"http://design.hse.ru/eduoffice"} Учебный офис
+                        .info-item
+                            %a{href:"http://design.hse.ru/files/academic_council"} Академический совет
+            .col-lg-2.col-lg-offset-1.col-md-4.col-sm-12.col-xs-12.bachelor-info.bachelor-info-additional
+                .info-item 
+                    Академический руководитель: 
+                    %br
+                    %span 
+                        %a.link-hse-1{:href => "http://www.hse.ru/org/persons/25959", :target => "_blank", :style => "color:#000 !important"}
+                            Ривчун Татьяна Евгеньева
+                    %div
+                        = image_tag "data/persons/116.png"
+                .info-item 
+                    Менеджер: 
+                    %br
+                    %span 
+                        %a.link-hse-1{:href => "http://www.hse.ru/org/persons/58732384", :target => "_blank", :style => "color:#000 !important"}
+                            Цховребадзе Екатерина Нугзаровна
+                    %div
+                        = image_tag "data/persons/115.png"
+    .row
+        .col-lg-12
+            %h2 Профили программы
+    .row.banners.magistracy-design-cards
+        %a.col-md-6.banner-card{href: "http://design.hse.ru/comm-basic"}
+            .substrate-banner-wrapper
+                .substrate-banner{style: "background-image: url(\"#{image_path('comm-advanced/substrate-banner4.png')}\");"}
+                .banner-content-wrapper
+                    .banner-title
+                        %h3 
+                            .title Level&nbsp;0 <br /><i style="font-style:normal; font-weight:normal;">Базовый уровень</i>
+                            .arrow
+                                = partial :banner_link_arrow
+                    .banner-content
+                        .mm-edi{data:{name:'mag_program_comm_basic_text'}}= "<%= block 'mag_program_comm_basic_text' %>"
+                = partial :banner_share, locals: {link: "comm-basic"}
+        %a.col-md-6.banner-card{href: "http://design.hse.ru/comm-advanced"}
+            .substrate-banner-wrapper
+                .substrate-banner{style: "background-image: url(\"#{image_path('comm-advanced/substrate-banner.png')}\");"}
+                .banner-content-wrapper
+                    .banner-title
+                        %h3 
+                            .title Level&nbsp;+ <br /><i style="font-style:normal; font-weight:normal;">Продвинутый уровень</i>
+                            .arrow
+                                = partial :banner_link_arrow
+                    .banner-content
+                        .mm-edi{data:{name:'mag_program_comm_advanced_text'}}= "<%= block 'mag_program_comm_advanced_text' %>"
+                = partial :banner_share, locals: {link: "comm-advanced"}
+        %a.col-md-6.banner-card{href: "http://design.hse.ru/museumdesign"}
+            .substrate-banner-wrapper
+                .substrate-banner{style: "background-image: url(\"#{image_path('comm-basic/best-russia.png')}\");"}
+                .banner-content-wrapper
+                    .banner-title
+                        %h3 
+                            .title Современный музейный дизайн
+                            .arrow
+                                = partial :banner_link_arrow
+                    .banner-content
+                        .mm-edi{data:{name:'mag_program_comm_museumdesign_text'}}= "<%= block 'mag_program_comm_museumdesign_text' %>"
+                = partial :banner_share, locals: {link: "museumdesign"}
+    .row.profile
+        .col-lg-7.col-md-8.about-profile-program.content
+            = partial :creative_map, locals: {link: "http://creativemap.hse.ru/timetable/1212"}
+    .content.practice
+        .row.decoration-line-wrapper
+            .decoration-line.col-md-pull-1
+            .col-lg-7.col-md-8.practice-content
+                .mm-edi{data:{name:'mag_program_comm_exam_text'}}= "<%= block 'mag_program_comm_exam_text' %>"
+                .get-consultation-button
+                    %a.hse-menu__button.popUp{:href => "#", :data => { class: ".bak"}} Получить&nbsp;консультацию
+            .col-lg-3.col-md-4.col-lg-offset-2.col-sm-12.col-xs-12
+                .bachelor-info.bachelor-info-additional.bachelor-info-additional-second
+                    .info-item
+                        .mm-edi{data:{name:'mag_program_comm_abitur_text'}}= "<%= block 'mag_program_comm_abitur_text' %>"
+                    = partial :abitur_info
+        .row                
+            .col-lg-7.col-md-8
+                %p 
+                    %a{href: "http://design.hse.ru/magistracy2015", style: "color: rgb(27, 104, 255);"} Магистратура 2015           
+= "<%= metrics_render %>"
+= "<%= admin_script %>"

@@ -1,0 +1,172 @@
+---
+project: magistracy
+title: Магистратура Школы дизайна НИУ ВШЭ
+titleContent: Магистерская программа «Дизайн»
+description: "Программа разработана для людей оригинально мыслящих, неравнодушных к визуальному окружению и стремящихся его улучшить."
+---
+= partial :action
+.container
+    = image_tag "data/mag_03.png", class: "mag-header-image"
+.container.bachelor.magistracy.main
+    .row.header
+        .row
+            .col-lg-7.col-md-8.col-sm-8.bottom
+                %h1
+                    %span 
+                    %a.magistracy-color-link{:href => "http://design.hse.ru/magistracy"} Магистратура
+                = partial :header_share, locals: {link: "magistracy"} 
+            .col-md-4.col-sm-4.col-xs-12.col-md-pull-0.col-lg-pull-1.bottom.get-consultation-button
+                %a.hse-menu__button.popUp{:href => "#", :data => { class: ".design"}} Получить&nbsp;консультацию
+= partial :white_hse_menu
+.container.bachelor.magistracy.main
+    .content.about-program.text-with-banner
+        .row 
+            .col-xs-12
+                .mm-edi{data:{name:'mag_program_design_attention_text'}}= "<%= block 'mag_program_design_attention_text' %>" 
+        .row
+            .col-lg-7.col-md-8.about-profile-program
+                .mm-edi{data:{name:'mag_program_design_declaration_text'}}= "<%= block 'mag_program_design_declaration_text' %>" 
+        .row.decoration-line-wrapper.about-profile-program
+            %h2 
+                %a{:href => "http://design.hse.ru/mag-design"} Программа &laquo;Дизайн&raquo;
+            .col-lg-5.col-md-12
+                .mm-edi{data:{name:'mag_program_design_intro_text'}}= "<%= block 'mag_program_design_intro_text' %>"
+            .col-lg-offset-1.col-lg-3.col-md-4.col-sm-12.col-xs-12.bachelor-info.bachelor-info-main
+                .bachelor-info-wrapper
+                    .info-item
+                        %span 2 года
+                        очная форма обучения
+                    .info-item
+                        %span 20
+                        бюджетных мест
+                    .info-item
+                        %span 20
+                        коммерческих мест
+                    .info-item
+                        %span.no-right-offset 300 000 
+                        руб
+                    .info-item
+                        %span RUS
+                        обучение на&nbsp;русском языке
+                    .info-item
+                        Государственная аккредитация
+                    .bachelor-info-additional
+                        .info-item
+                            Программу ведет: 
+                            %span 
+                                %a.link-hse-1{:href => "https://cmd.hse.ru", :target => "_blank", :style => "color:#000 !important"} Факультет коммуникаций, медиа и&nbsp;дизайна
+                    .bachelor-info-links
+                        .info-item
+                            %a{href:"http://design.hse.ru/eduoffice"} Учебный офис
+                        .info-item
+                            %a{href:"http://design.hse.ru/files/academic_council"} Академический совет
+            .col-lg-2.col-lg-offset-1.col-md-4.col-sm-12.col-xs-12.bachelor-info.bachelor-info-additional
+                .info-item 
+                    Академический руководитель: 
+                    %br
+                    %span 
+                        %a.link-hse-1{:href => "http://www.hse.ru/org/persons/58732398", :target => "_blank", :style => "color:#000 !important"}
+                            Аристова Ульяна Викторовна
+                    %div
+                        = image_tag "data/persons/114.jpg"
+                .info-item 
+                    Менеджер: 
+                    %br
+                    %span 
+                        %a.link-hse-1{:href => "http://www.hse.ru/org/persons/58732384", :target => "_blank", :style => "color:#000 !important"}
+                            Цховребадзе Екатерина Нугзаровна
+                    %div
+                        = image_tag "data/persons/115.png"
+    .row
+        .col-lg-12
+            %h2 Профили программы
+    .row.banners
+        %a.col-md-6.banner-card{href: "http://design.hse.ru/book"}
+            .substrate-banner-wrapper
+                .substrate-banner{ style: "background-image: url(\"#{ image_path('book-banner.png')}\");"}
+                .banner-content-wrapper-top
+                    .banner-persone-name
+                        Евгений Корнеев
+                    .banner-persone-status
+                        куратор профиля
+                .banner-content-wrapper
+                    .banner-title
+                        %h3 
+                            .title Дизайн книги 
+                            .arrow
+                                = partial :banner_link_arrow
+                    .banner-content
+                        .mm-edi{data:{name:'mag_program_design_book_text'}}= "<%= block 'mag_program_design_book_text' %>"
+                = partial :banner_share, locals: {link: "book"}
+        %a.col-md-6.banner-card{href: "http://design.hse.ru/animation-mag"}
+            .substrate-banner-wrapper
+                .substrate-banner{ style: "background-image: url(\"#{ image_path('animation-mag/substrate-banner.png')}\");"}
+                .banner-content-wrapper-top
+                    .banner-persone-name
+                        Михаил Алдашин
+                    .banner-persone-status
+                        куратор профиля
+                .banner-content-wrapper
+                    .banner-title
+                        %h3 
+                            .title Режиссура анимации
+                            .arrow
+                                = partial :banner_link_arrow
+                    .banner-content
+                        .mm-edi{data:{name:'mag_program_design_animation_text'}}= "<%= block 'mag_program_design_animation_text' %>"
+                = partial :banner_share, locals: {link: "animation-mag"}
+        %a.col-md-6.banner-card{href: "http://design.hse.ru/regional-branding"}
+            .substrate-banner-wrapper
+                .substrate-banner{ style: "background-image: url(\"#{ image_path('regional-branding-banner2.png')}\");"}
+                .banner-content-wrapper-top
+                    .banner-persone-name
+                        Михаил Лабазов и Михаил Лабазов мл. 
+                    .banner-persone-status
+                        куратор профиля
+                .banner-content-wrapper
+                    .banner-title
+                        %h3 
+                            .title Территориальный брендинг и&nbsp;дизайн городской среды
+                            .arrow
+                                = partial :banner_link_arrow
+                    .banner-content
+                        .mm-edi{data:{name:'mag_program_design_regional_text'}}= "<%= block 'mag_program_design_regional_text' %>"
+                = partial :banner_share, locals: {link: "regional-branding"}
+        %a.col-md-6.banner-card{href: "http://design.hse.ru/fashion-mag"}
+            .substrate-banner-wrapper
+                .substrate-banner{ style: "background-image: url(\"#{ image_path('fashion-mag-banner.png')}\");"}
+                .banner-content-wrapper-top
+                    .banner-persone-name
+                        Анзор Канкулов
+                    .banner-persone-status
+                        куратор профиля
+                .banner-content-wrapper
+                    .banner-title
+                        %h3 
+                            .title Мода
+                            .arrow
+                                = partial :banner_link_arrow
+                    .banner-content
+                        .mm-edi{data:{name:'mag_program_design_fashion_text'}}= "<%= block 'mag_program_design_fashion_text' %>"
+                = partial :banner_share, locals: {link: "fashion-mag"}
+    .row.profile
+        .col-lg-7.col-md-8.about-profile-program.content
+            = partial :creative_map, locals: {link: "http://creativemap.hse.ru/timetable/1215"}
+    .content.practice
+        .row.decoration-line-wrapper
+            .decoration-line.col-md-pull-1
+            .col-lg-7.col-md-8.practice-content
+                .mm-edi{data:{name:'mag_program_design_exam_text'}}= "<%= block 'mag_program_design_exam_text' %>"
+                .get-consultation-button
+                    %a.hse-menu__button.popUp{:href => "#", :data => { class: ".bak"}} Получить&nbsp;консультацию
+            .col-lg-3.col-md-4.col-lg-offset-2.col-sm-12.col-xs-12
+                .bachelor-info.bachelor-info-additional.bachelor-info-additional-second
+                    .info-item
+                        .mm-edi{data:{name:'mag_program_design_abitur_text'}}= "<%= block 'mag_program_design_abitur_text' %>"
+                    = partial :abitur_info
+        .row                
+            .col-lg-7.col-md-8
+                %p 
+                    %a{href: "http://design.hse.ru/magistracy2015", style: "color: rgb(27, 104, 255);"} Магистратура 2015           
+= "<%= metrics_render %>"
+= "<%= admin_script %>"

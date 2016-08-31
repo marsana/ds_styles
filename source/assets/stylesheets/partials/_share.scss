@@ -1,0 +1,77 @@
+.ds_share-arrow {
+    display: inline-block;
+
+    fill: $color-main;
+    transition: all .2s;
+    // &:hover {
+    //  fill: $hover-link-color;
+    // }
+}
+.ds_header-module .ds_share-arrow {
+    margin: 0;
+    padding: 0;
+    // margin-bottom: 10px;
+    // margin-left: 10px;
+    position: relative;
+    // left: -5px;
+    top: 0px;
+    // fill: $color-main !important;
+    transition: all .2s;
+    svg {
+        // fill: $banner-interview-color;
+        width: 20px;
+        height: 14px;
+    }    
+    .svg_share {
+        cursor: pointer;
+    }
+    .share-open {
+
+        text-align: left;
+        direction:  rtl;
+        display: inline-block;
+        width: 160px;
+        opacity: 0;
+        padding-left: 7px;
+        left: 20px;
+        top: 0px;
+        transition: opacity .2s;
+        div {
+            cursor: pointer;
+            margin-left: 20px;
+            display: inline-block;
+            transition: opacity .2s;
+        }
+        
+        div:hover {
+            opacity: .7;
+        }
+        // display: none;
+        position: absolute;
+    }
+    &:hover {
+        .share-open {
+            opacity: 1;
+        }
+    }
+}
+
+
+@media (max-width: 768px){
+    .ds_header-module .ds_share-arrow {
+        margin: 0;
+        padding: 0;
+        margin-left: 40px;
+        bottom: 0;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 470px){
+    .ds_header-module .ds_share-arrow {
+        position: absolute;
+        display: block;
+        top: 70px;
+        left: 21px;
+    }
+}

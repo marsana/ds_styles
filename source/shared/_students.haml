@@ -1,0 +1,30 @@
+.stud.holder_padding.parent__selector
+  .container
+    .row.hide-show__status.design__status.hide-button
+      .col-lg-8.col-lg-offset-2.col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-2.col-xs-10.col-xs-offset-1
+        .arrow-status.icon-right-open
+        %h1.center Достижения студентов
+
+  .stud__holder.hide-info.hide-info-height
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2.col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-2.col-xs-10.col-xs-offset-2
+          = "<%= block 'student_works' %>"
+          / %p <a class="links" href="http://portfolio.hse.ru/">Студенческое портфолио Школы дизайна</a> — инструмент коммуникации студентов друг с другом и с преподавателями, позволяющий проследить развитие профессиональных навыков и креативного мышления каждого учащегося.
+          / %p В течение всего периода обучения студенты выполняют учебные проекты, которые можно увидеть на странице Студенческого портфолио. Ранжированные по популярности, эти работы влияют на рейтинг студента и в будущем послужат убедительным доказательством его профессионализма.
+
+      -# .nav-container-holder
+
+        / = "<%= portfolio_works_render %>"
+    .fluidMedia
+      %iframe{src: 'http://portfolio.hse.ru?iframe=1', frameborder: 0}
+      / .container
+      /   .swiper-container.swiper-2
+      /     .swiper-wrapper
+
+      /       =partial :stud_item
+      /       =partial :stud_item
+      /       =partial :stud_item
+      /       =partial :stud_item
+      /       =partial :stud_item
+      /       =partial :stud_item

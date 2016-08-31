@@ -1,0 +1,99 @@
+---
+project: museumdesign
+title: Современный музейный дизайн - Магистратура Школы дизайна НИУ ВШЭ
+titleContent: Магистерская программа «Современный музейный дизайн»
+description: "Программа готовит музейных дизайнеров — профессионалов, способных создавать комплексные проекты по дизайну музея."
+---
+= partial :action
+.container
+    = image_tag "data/mag_02.png", class: "mag-header-image"
+.container.bachelor.magistracy.main.profile-header
+    .row.header
+        .row
+            .col-lg-12.col-md-8.col-sm-8.bottom
+                %h1
+                    %span 
+                    Современный музейный дизайн
+                = partial :header_share, locals: {link: "museumdesign"}
+.hse-menu-bachelor
+.container.bachelor.magistracy.profile.museumdesign
+    .content.about-program.text-with-banner
+        .row
+            .col-lg-7.col-md-8.about-profile-program
+                .mm-edi{data:{name:'mag_museum_declaration_text'}}= "<%= block 'mag_museum_declaration_text' %>" 
+        .row.decoration-line-wrapper
+            .decoration-line.col-md-pull-1
+            .col-lg-7.col-md-8.about-profile-program
+                .mm-edi{data:{name:'mag_museum_intro_text'}}= "<%= block 'mag_museum_intro_text' %>"
+                .hideText
+                    %h3#open1{style: "font-size: 20px; margin-bottom:0px; padding-top:20px; "} 
+                        Подробности о содержании обучения
+                        <svg width="10px" height="20px" viewBox="0 0 23 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-1329.000000, -1285.000000)" stroke-width="2" stroke="#000000"><polyline id="Path-3219" points="1330 1286 1350 1306.7472 1330.06717 1327.49439"></polyline></g></g></svg>
+                    #hidden_1
+                        .mm-edi{data:{name:'mag_museum_intro_more'}}= "<%= block 'mag_museum_intro_more' %>"
+                = partial :creative_map, locals: {link: "http://creativemap.hse.ru/timetable/1214"}
+            = partial :menu_in_body 
+    .content.about-profile                
+        .row                
+            .col-md-12.banner-full.banner-interview.substrate.substrate-banner
+                .th-slider.swiper-container
+                    .swiper-wrapper
+                        .swiper-slide{style: "background-image: url(\"#{image_path('museumdesign/person3.png')}\"); background-size:contain; background-repeat:no-repeat;"}
+                            .col-md-offset-1.col-md-2.banner-content-wrapper
+                                .banner-title
+                                    %h3 
+                                        Игорь Гурович 
+                                .banner-content
+                                    .mm-edi{data:{name:'mag_museum_gurovich_text'}}= "<%= block 'mag_museum_gurovich_text' %>"
+                        .swiper-slide{style: "background-image: url(\"#{image_path('museumdesign/person1.png')}\");"}
+                            .col-md-offset-1.col-md-2.banner-content-wrapper
+                                .banner-title
+                                    %h3 
+                                        Наталья Сергиевская
+                                .banner-content
+                                    .mm-edi{data:{name:'mag_museum_sergievskay_text'}}= "<%= block 'mag_museum_sergievskay_text' %>"
+                        .swiper-slide.agni{style: "background-image: url(\"#{image_path('museumdesign/person5.jpg')}\");"}
+                            .col-md-offset-1.col-md-2.banner-content-wrapper
+                                .banner-title
+                                    %h3 
+                                        Агния Стерлигова
+                                .banner-content
+                                    .mm-edi{data:{name:'mag_museum_sterligova_text'}}= "<%= block 'mag_museum_sterligova_text' %>"
+                        .swiper-slide{style: "background-image: url(\"#{image_path('museumdesign/person4.png')}\");"}
+                    .toRignt.swiper-button-next
+                        = partial :slider_arrow
+        .row 
+            .col-md-8.col-md-offset-2
+                .swiper-container.qu-main-slider
+                    .swiper-wrapper
+                        .quote.swiper-slide 
+                            .mm-edi{data:{name:'mag_museum_gurovich_quote'}}= "<%= block 'mag_museum_gurovich_quote' %>"
+                        .quote.swiper-slide 
+                            .mm-edi{data:{name:'mag_museum_sergievskay_quote'}}= "<%= block 'mag_museum_sergievskay_quote' %>"
+                        .quote.swiper-slide
+                        .quote.swiper-slide
+    .content.practice
+        .row.decoration-line-wrapper
+            .decoration-line.col-md-pull-1
+            .col-lg-7.col-md-8.practice-content
+                .mm-edi{data:{name:'mag_museum_exam_text'}}= "<%= block 'mag_museum_exam_text' %>"
+                .get-consultation-button
+                    %a.hse-menu__button.popUp{:href => "#", :data => { class: ".op_museum"}} Получить&nbsp;консультацию
+            .col-lg-3.col-md-4.col-lg-offset-2.col-sm-12.col-xs-12
+                .bachelor-info.bachelor-info-additional.bachelor-info-additional-second
+                    .info-item
+                        .mm-edi{data:{name:'mag_museum_abitur_text'}}= "<%= block 'mag_museum_abitur_text' %>"
+                    = partial :abitur_info
+        .row
+            %h2 Студенческие проекты
+    .stud.holder_padding.parent__selector
+        .stud__holder.hide-info.hide-info-height
+            .fluidMedia.frame
+                %iframe{src: 'http://portfolio.hse.ru/?iframe=1&searchString=Музей', frameborder: 0}
+    .content.practice
+        .row                
+            .col-lg-7.col-md-8
+                %p 
+                    %a{href: "http://design.hse.ru/magistracy2015", style: "color: rgb(27, 104, 255);"} Магистратура 2015           
+= "<%= metrics_render %>"
+= "<%= admin_script %>"

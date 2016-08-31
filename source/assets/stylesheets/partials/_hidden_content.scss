@@ -1,0 +1,11 @@
+#open1.open1 {
+  svg{  transform:rotate(-90deg);}
+}
+.hideText {
+  margin-bottom: 90px;
+}
+#open1 {
+  svg{  transform:rotate(90deg);
+    transition: transform .2s;
+    margin-left: 10px; position: relative; top: 3px; }
+}

@@ -1,0 +1,14 @@
+@mixin link() {
+  text-decoration: none;
+  color: $color-link;
+  border-bottom: 1px solid #DBDBDB;
+  transition: all .3s;
+  &:hover {
+    color: $color-hover;
+    border-bottom-color: $color-hover;
+  }
+  &:active {
+    color: $color-active;
+    border-bottom-color: $color-active;
+  }
+}

@@ -1,0 +1,119 @@
+
+
+.bachelor-info {
+    margin-top: 40px;
+    .info-item {
+        margin-bottom: 22px;
+        font-size: 14px;
+        line-height: 17px;
+        span {
+            margin-right: 10px;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;
+            &.no-right-offset {
+                margin-right: auto;
+            }
+        }
+
+    }
+    &.bachelor-info-additional, .bachelor-info-additional {
+        margin-top: 75px;
+        .info-item span {
+            font-size: 14px;
+            line-height: 17px;
+            margin-right: auto;
+        }
+    }
+    .bachelor-info-additional {
+        margin-top: 0px;
+    }
+    img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+    a {
+        color: $link-color;
+    }
+}
+.bachelor-info-main-mob {
+    display: none;
+}
+.bachelor-info-main.bachelor-info-main-mob {
+    padding-left: 10px;
+    .info-item {
+        width: auto;
+        display: block;
+        span, div {
+            padding: 0;
+            margin: 0; 
+            display: inline-block;
+        }
+        div {
+            margin-left: 5px;
+            font-size: 14px;
+            line-height: 12px;
+        }
+    }
+    .info-item:last-child {
+        padding-left: 0px;
+    }
+}
+
+
+
+    .bachelor-info-wrapper {
+        padding-left: 60px;
+        padding-right: 50px;
+        border-left: 1px solid #979797;
+        padding-bottom: 30px;
+    }
+    .bachelor-info-additional {
+        border-left-width: 0px;
+        h4 {
+            margin-top: 80px;
+        }
+
+    }
+
+
+    .bachelor .content .bachelor-info-additional h4 {
+        margin-top: 80px;
+    }
+
+
+    
+    .bachelor-info-additional .bachelor-info-additional-openday {
+        div, .info-item div span {
+            font-size: 20px !important;
+            line-height: 28px !important;
+        }
+        h4 {
+            font-size: 14px !important;
+            line-height: 17px !important;
+        }
+        .day, .time {
+            width: 50%;
+            float: left;
+            vertical-align: middle;
+        } 
+        .day {
+            border-right: 1px solid #979797;
+        }
+        .time {
+            padding-top: 25px; 
+            padding-left: 20px;
+        }
+    }
+
+    .bachelor .bachelor-info.bachelor-info-additional {
+        margin-top: 40px;
+    }
+    .bachelor-info-additional.bachelor-info-additional-second {
+        margin-top: 75px !important;
+    }
+

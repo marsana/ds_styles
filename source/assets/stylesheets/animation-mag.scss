@@ -1,0 +1,32 @@
+@import "utils/vars";
+
+.bachelor.magistracy.profile {
+	li.animation-mag-menu-item {
+		display: none;
+		margin-top: 17px;
+		margin-bottom: 20px;
+		a {
+
+			font-size: 36px !important;
+            line-height: 30px !important;
+			color: #ffb100;
+			margin-bottom: 15px;
+			margin-top:15px; 
+			font-weight: bold;
+			opacity: 1;
+		}
+
+		.share { 
+			display: inline-block;
+			margin-bottom: 15px;
+			margin-top:15px; 
+
+		}
+
+	}
+	.banner-content-wrapper {
+		color: $color-main;
+		top: 170px;
+		bottom: auto;
+	}
+}

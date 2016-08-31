@@ -1,0 +1,79 @@
+.directions-menu {
+    font-size: 20px;
+    li {
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
+    a {
+        color: $header-text-color;
+        text-decoration: none;
+        transition: all .2s;
+        &:hover {
+            color: $hover-link-color;
+        }
+    } 
+}
+.directions-menu li {
+    line-height: 18px !important;
+    margin-bottom: 16px !important;
+}
+.directions-menu a {
+    font-size: 16px !important;
+}
+@media (max-width: 992px) {
+
+    .directions-menu {
+        margin-top: 40px;
+        background-color: white !important;
+    }
+    .directions-menu:hover {
+        background-color: white !important;
+    }
+    .directions-menu li {
+        padding-left: 10px;
+    } 
+}
+
+.bachelor.magistracy.profile .directions-mag-menu {
+
+    .comm {
+        display: none;
+    }
+    &.directions-mag-menu-comm .comm {
+        display: inline-block;
+    }
+    li {
+        margin-bottom: 20px;
+    }
+    li a {
+        opacity: 0.5;
+        font-size: 20px;
+        color: $color-main;
+        text-decoration: none;
+        line-height: 25px;
+        transition: opacity .2s; 
+        display: block;
+    }
+    li a:hover {
+        opacity: 1;
+    }
+    span {
+        max-width: 45%;
+        display: inline-block;
+    }
+    .share, span {
+        margin-bottom: auto;
+        vertical-align: bottom;
+        position: relative;
+        .svg_share {
+            position: relative;
+        }
+    }
+    .share_open {
+        top: -6px !important;
+    }
+    .share {
+        display: none;
+        margin-left: 85px;
+    }
+}

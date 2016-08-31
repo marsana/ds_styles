@@ -1,0 +1,114 @@
+---
+project: all-in-one
+title: Все модули Школы Дизайна
+titleContent: 
+description: 
+---
+
+
+/ %h1 Шапка
+
+/ .container
+/     = image_tag "data/mag_01.png", class: "mag-header-image"
+
+= partial :ds_header_module, locals: {substrate: true, title_type: "Бакалавриат", get_cons_class: ".op_book", title: "Мода", share_link:"fashion", image_path:"http://design.hse.ru/directions/assets/images/fashion/header-bg.png"}
+
+/ .container
+/     .row.header
+/         .row
+/             .col-lg-7.col-md-8.col-sm-8
+/                 %h1
+/                     %span 
+/                     Магистратура
+/                 = partial :header_share, locals: {link: "magistracy"}
+/             .col-md-4.col-sm-4.col-xs-12.col-md-pull-0.col-lg-pull-1.get-consultation-button.to-line
+/                 %a.hse-menu__button.popUp{:href => "#", :data => { class: ""}} Получить&nbsp;консультацию
+
+
+
+%hr
+
+
+
+%h1 Кнопка перехода на карту креативных компетенций
+.container 
+    .row
+        .col-xs-12
+            = partial :creative_map, locals: {link: "http://creativemap.hse.ru/timetable/1218"}
+            .creative-map-center
+                = partial :creative_map, locals: {link: "http://creativemap.hse.ru/timetable/1218"}
+
+
+%hr
+
+%h1 Белое меню для направлений
+= partial :white_hse_menu
+
+
+%hr
+
+%h1 Скрытый текст
+.container
+    .row
+        .col-lg-7.col-md-8
+            = partial :hidden_text, locals: {title: "Подробности о содержании обучения", content: "Скрытый текст", tag_name: "read_more"}
+
+%hr
+
+%h1 Кнопка получения консультаций
+
+= partial :action
+
+.container 
+    .row
+        .col-xs-12
+            .get-consultation-button
+                %a.hse-menu__button.popUp{:href => "#", :data => { class: ".op_book"}} Получить&nbsp;консультацию
+
+            .to-line.get-consultation-button
+                %a.hse-menu__button.popUp{:href => "#", :data => { class: ".op_book"}} Получить&nbsp;консультацию    
+            .content
+
+                .get-consultation-button
+                    %a.hse-menu__button.popUp{:href => "#", :data => { class: ".op_book"}} Получить&nbsp;консультацию    
+
+%hr
+
+%h1 Типография
+
+.container 
+    .row
+        .col-xs-12
+            самый простой текст на странице
+        .col-xs-12.content
+            %h1 Заголовок
+
+            %p Абзац текста 
+            
+            %h4 Подзаголовок  
+
+            %p Пример <a href="http://design.hse.ru/" target="_blank">ссылки</a>.
+
+            %h4 Список
+
+            %ul
+                %li Пункт первый  
+                %li Пункт второй
+%hr
+
+%h1 Шапка
+
+
+.container
+    .row.header
+        .row
+            .col-lg-7.col-md-8.col-sm-8
+                %h1
+                    %span 
+                    Магистратура
+                = partial :header_share, locals: {link: "magistracy"}
+            .col-md-4.col-sm-4.col-xs-12.col-md-pull-0.col-lg-pull-1.get-consultation-button.to-line
+                %a.hse-menu__button.popUp{:href => "#", :data => { class: ""}} Получить&nbsp;консультацию
+
+
+

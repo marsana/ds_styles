@@ -1,0 +1,65 @@
+.creative-map {
+    margin-top: 45px;
+    margin-bottom: 35px;
+    .creative-map-button {
+        cursor: pointer;
+        height: 60px;
+        width: 420px;
+        max-width: 100%;
+        float: left;
+        text-align: center;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
+        text-decoration: none;
+        .creative-map-button-title {
+            opacity: 0.7;
+            font-size: 24px;    
+            color: $link-color;
+            line-height: 60px;
+        }
+    }
+    .creative-map-notice{
+        float: left;
+        padding: 10px;
+        padding-left: 30px;
+        padding-left: 30px;
+        height: 60px;
+        // min-width: 250px;
+        max-width: 40%;
+        font-family: 'Baskerville', serif;
+        font-size: 18px;
+        line-height: 20px;
+        font-style: italic;
+        @media (max-width: 1462px) {
+            max-width: 100%;
+        }
+    }
+}
+.creative-map-center {
+    .creative-map-button, 
+    .creative-map-notice { 
+        max-width: 100%; 
+        width: 100%;
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+        .creative-map-button-title {
+            font-size: 20px;
+        }        
+    }
+}
+
+@media (max-width: 400px) {
+    .creative-map{
+        width: 100%;
+    }
+    .creative-map-button {
+        line-height: 60px;
+    }
+    .creative-map .creative-map-button .creative-map-button-title {
+        font-size: 18px;
+        line-height: 20px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}

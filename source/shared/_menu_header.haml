@@ -1,0 +1,34 @@
+%a.link 
+    магистратура: 
+    %span.comm коммуникационный
+    дизайн
+%ul
+    %li.book-menu-item
+        %span
+            = link_to 'Дизайн книги', 'http://design.hse.ru/book'
+        = partial :header_share, locals: {link: "book"} 
+        
+    %li.animation-mag-menu-item  
+        %span
+            = link_to 'Режиссура анимации', 'http://design.hse.ru/animation-mag'
+        = partial :header_share, locals: {link: "animation-mag"} 
+    %li.regional-branding-menu-item  
+        %span
+            = link_to 'Территориальный брендинг и&nbsp;дизайн городской среды', 'http://design.hse.ru/regional-branding'
+        = partial :header_share, locals: {link: "regional-branding"} 
+    %li.fashion-mag-menu-item  
+        %span
+            = link_to 'Мода', 'http://design.hse.ru/fashion-mag'
+        = partial :header_share, locals: {link: "fashion-mag"} 
+    %li.comm-basic-menu-item  
+        %span
+            = link_to 'Коммуникационный дизайн. Level&nbsp;0 (Базовый уровень)', 'http://design.hse.ru/comm-basic'
+        = partial :header_share, locals: {link: "comm-basic"} 
+    %li.comm-advanced-menu-item  
+        %span
+            = link_to 'Коммуникационный дизайн. Level&nbsp;+ (Продвинутый уровень)', 'http://design.hse.ru/comm-advanced'
+        = partial :header_share, locals: {link: "comm-advanced"} 
+    %li.museumdesign-menu-item  
+        %span
+            = link_to 'Современный музейный дизайн', 'http://design.hse.ru/museumdesign'
+        = partial :header_share, locals: {link: "museumdesign"} 

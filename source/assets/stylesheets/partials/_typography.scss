@@ -1,0 +1,53 @@
+h1{
+  text-transform: none;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 60px;
+  margin: 80px 0 0px;
+  @include respond-to(mob) {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+h2 {
+  text-transform: none;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 30px;
+  @include respond-to(mob) {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+h3 {
+  text-transform: none;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+p{
+  font-size: 14px;
+  line-height: 20px;
+}
+.small{
+  font-size: 12px;
+  line-height: 17px;
+}
+.lead{
+  font-size: 23px;
+  line-height: 30px;
+  @include respond-to(mob) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+.center{
+  text-align: center;
+}
+.bold{
+  font-weight: 900;
+}
+.left{
+  text-align: left;
+}

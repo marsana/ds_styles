@@ -1,0 +1,54 @@
+.pop-up-holder
+  .pop-up__container-holder
+    .container
+      .row
+        .col-lg-10.col-lg-offset-1.popup-container
+          .close__popUp
+          .form
+            .spiner-holder
+            %h2.center Индивидуальная консультация
+            %p.lead Друзья!
+            %p.lead Уже сейчас вы можете задать интересующие вас вопросы, а также отправить вступительное мотивационное письмо на почту <a href="mailto:design@hse.ru" target="_blank">design@hse.ru</a>.
+            %p.lead Также у вас есть возможность получить индивидуальную консультацию ведущих преподавателей Школы дизайна по вопросам выбора направления обучения, заполнив форму регистрации. Мы обязательно свяжемся с вами в ближайшее время!
+
+            %h2.center Получить консультацию
+            %form#ajaxform{"accept-charset" => "UTF-8", :action => "/consultation_requests", :method => "post"}
+              .line
+                %p ФИО*
+                %input{:name => "name", :placeholder => "", :required => "required", :type => "text"}
+              .line
+                %p Электронная почта*
+                %input{:name => "email", :placeholder => "", :required => "required", :type => "email"}/
+              .line
+                %p Контактный телефон
+                %input{:name => "phone", :placeholder => "", :type => "text"}
+              .line
+                %p Предыдущее образование*
+                %input{:name => "education", :placeholder => "", :required => "required", :type => "text"}
+              .line
+                %p.filter-label Профиль*
+                .js__select__holder
+                  %select.js__select{:name => 'direction', :required => true, :data => { placeholder: 'Выберите направление' }}
+                    -# %option
+                    %option.comm.op_level0{:value => 0} Коммуникационный дизайн. Базовый уровень
+                    %option.comm.op_levelUp{:value => 1} Коммуникационный дизайн. Продвинутый уровень
+                    %option.comm.op_museum{:value => 13} Современный музейный дизайн
+
+                    %option.design.op_book{:value => 11} Дизайн книги
+                    %option.design.op_animation{:value => 4} Режиссура анимации
+                    %option.design.op_branding{:value => 3} Территориальный брендинг и дизайн городской среды
+                    %option.design.op_fashion{:value => 2} Мода
+
+              .line
+                %p &nbsp;
+                = "<%= recaptcha_tags %>"
+              .line
+                %p
+                %input.button-add{:name => "button", :type => "submit", :value => "записаться"}
+
+          .__ok.hide
+            %p.center Вы записались на индивидуальную консультацию. Мы обязательно свяжемся с вами в ближайшее время!
+            %a.cancel-ok{:href => "/"} закрыть
+          .__error.hide
+            %p.center Что-то пошло не так, попробуйте позже.
+            %a.cancel{:href => "/"} закрыть

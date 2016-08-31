@@ -1,0 +1,67 @@
+---
+project: regional-branding
+title: Территориальный брендинг и дизайн городской среды - Магистратура Школы дизайна НИУ ВШЭ
+titleContent: Магистерская программа «Территориальный брендинг и дизайн городской среды»
+description: "Качественное преимущество программы состоит в том, что студенты параллельно осваивают основные инструменты коммуникационного дизайна и учатся применять новые знания в исследовательской и проектной работе с конкректными объектами в городской среде."
+---
+= partial :action
+.container
+    = image_tag "data/mag_03.png", class: "mag-header-image"
+.container.bachelor.magistracy.main.profile-header
+    .row.header
+        .row
+            .col-lg-12.col-md-8.col-sm-8.bottom
+                %h1
+                    %span 
+                    Территориальный брендинг<div></div>и&nbsp;дизайн городской среды
+                = partial :header_share, locals: {link: "regional-branding"}
+.hse-menu-bachelor
+.container.bachelor.magistracy.profile.regional-branding
+    .content.about-program.text-with-banner
+        .row
+            .col-lg-7.col-md-8.about-profile-program
+                .mm-edi{data:{name:'mag_regional_declaration_text'}}= "<%= block 'mag_regional_declaration_text' %>" 
+        .row.decoration-line-wrapper
+            .decoration-line.col-md-pull-1
+            .col-lg-7.col-md-8.about-profile-program
+                .mm-edi{data:{name:'mag_regional_intro_text'}}= "<%= block 'mag_regional_intro_text' %>"
+                = partial :creative_map, locals: {link: "http://creativemap.hse.ru/timetable/1217"}
+            = partial :menu_in_body 
+    .content.about-profile                
+        .row                
+            .col-md-12.banner-full.banner-interview.substrate.substrate-banner
+                .th-slider.swiper-container
+                    .swiper-wrapper
+                        .swiper-slide{style: "background-image: url(\"#{image_path('regional-branding/substrate-banner.png')}\"); background-size: cover;"}
+                            .col-md-offset-1.col-md-2.banner-content-wrapper{style: "color: #000;"}
+                                .banner-title
+                                    %h3 
+                                        Михаил&nbsp;Лабазов&nbsp;мл.
+                                .banner-content
+                                    .mm-edi{data:{name:'mag_regional_labazov_text'}}= "<%= block 'mag_regional_labazov_text' %>"
+                        .swiper-slide{style: "background-image: url(\"#{image_path('comm-advanced/substrate-banner2.png')}\"); background-size: cover;"}
+                            .col-md-offset-1.col-md-2.banner-content-wrapper{style: "color: #000;"}
+                                .banner-title
+                                    %h3 
+                                        Сергей Клещев
+                                .banner-content
+                                    .mm-edi{data:{name:'mag_regional_kleshov_text'}}= "<%= block 'mag_regional_kleshov_text' %>"
+                    .toRignt.swiper-button-next
+    .content.practice
+        .row.decoration-line-wrapper
+            .decoration-line.col-md-pull-1
+            .col-lg-7.col-md-8.practice-content
+                .mm-edi{data:{name:'mag_regional_exam_text'}}= "<%= block 'mag_regional_exam_text' %>"
+                .get-consultation-button
+                    %a.hse-menu__button.popUp{:href => "#", :data => { class: ".op_branding"}} Получить&nbsp;консультацию
+            .col-lg-3.col-md-4.col-lg-offset-2.col-sm-12.col-xs-12
+                .bachelor-info.bachelor-info-additional.bachelor-info-additional-second
+                    .info-item
+                        .mm-edi{data:{name:'mag_regional_abitur_text'}}= "<%= block 'mag_regional_abitur_text' %>"
+                    = partial :abitur_info
+        .row                
+            .col-lg-7.col-md-8
+                %p 
+                    %a{href: "http://design.hse.ru/magistracy2015", style: "color: rgb(27, 104, 255);"} Магистратура 2015           
+= "<%= metrics_render %>"
+= "<%= admin_script %>"

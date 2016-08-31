@@ -1,0 +1,29 @@
+@import "base/normalize";
+@import "utils/vars";
+@import "utils/fonts";
+@import "base/bootstrap";
+@import "partials/swiper";
+
+@import "base/common";
+// @import "base/old";
+
+@import "partials/white_hse_menu"; // done ++
+
+@import "partials/header"; // done
+
+@import "partials/content"; // done ++
+@import "partials/content_aside";
+@import "partials/hidden_content"; // done ++
+@import "partials/decor_line";
+@import "partials/share";
+
+@import "partials/cards";
+
+@import "partials/creativemap"; // done ++
+
+@import "partials/action"; // done ++
+@import "partials/getconsbutt"; // done ++
+
+@import "partials/directions_menu"; // done
+
+body {padding-bottom: 400px;}

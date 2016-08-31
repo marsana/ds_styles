@@ -1,0 +1,175 @@
+.ds_get-consultation-button {
+    margin-bottom: 25px;
+    // right: -5px;
+    bottom: 8px !important; 
+    padding-right: 0;
+    text-align: right;
+    a { 
+        display: inline-block;
+        width: 293px;
+        height: 44px;
+        border: 3px solid $banner-interview-color;
+        font-size: 18px;
+        line-height: 38px;
+        text-transform: lowercase;
+        color: white !important;
+        background-color: $banner-interview-color;
+        text-decoration: none;
+        text-align: center;
+        
+        // margin-top: 60px;
+        // margin-bottom: 50px;
+        // margin-right: auto;
+        // margin-left: auto;
+        max-width: 100%;
+        transition: all .2s;
+        &:hover {
+            background-color: #f59c00;
+            border-color: #f59c00;
+        }
+
+    }
+
+}
+
+
+.content {
+    .ds_get-consultation-button {
+        text-align: left !important;
+        margin-top: 40px;
+        margin-bottom: 80px;        
+        a {
+            display: block;
+            max-width: 420px;
+            width: 100%;
+            height: 60px;
+            font-size: 24px;
+            line-height: 53px; 
+            color: $header-text-color !important;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .ds_get-consultation-button a {
+            margin-top: 0px;
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .ds_get-consultation-button a {
+            font-size: 20px;
+        }
+    }
+    @media (max-width: 401px) {
+        .ds_get-consultation-button {
+            width: 100%;
+            padding-right: 0;
+            padding-left: 0;
+            a {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1461px) {
+    .get-consultation-button{
+        right: 30px !important;
+    }
+}
+
+@media (max-width: 1200px) {
+
+
+    .ds_get-consultation-button a {
+        width: 100% !important;
+    }
+}
+
+
+@media (max-width: 992px) {
+
+
+    .ds_get-consultation-button {
+        a {
+            font-size: 19px;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    
+
+    .ds_get-consultation-button {
+        margin-bottom: 0;
+        a {
+            max-width: 200px;
+            width: 100%;
+            font-size: 14px;
+            height: 30px;
+            line-height: 25px;
+
+        }
+    }
+
+
+    .to-line.ds_get-consultation-button {
+        text-align: left;
+
+        a {
+            background: none;
+            color: #ffb100 !important;
+            // text-decoration: underline;
+            margin-top: -15px;
+            text-align: left;
+            border: none;
+            // font-size: 60px !important;
+            // line-height: 60px !important;
+            padding-left: 55px;
+            text-shadow: 1px 0px 0px white,
+                           1px 0px 0px white,
+                           -1px 0px 0px white,
+                           -1px 0px 0px white,
+                            0px 0px 0px white,
+                           0px -0px 0px white,
+                           -0px 0px 0px white,
+                           -0px -0px 0px white,
+                            2px 0px 0px white,
+                           2px -0px 0px white,
+                           -2px 0px 0px white,
+                           -2px -0px 0px white,
+                            3px 0px 0px white,
+                           3px -0px 0px white,
+                           -3px 0px 0px white,
+                           -3px -0px 0px white;
+            &:after {
+                    content: "";
+                    display: block;
+                    position: relative;
+                    z-index: -1;
+                    width: 106%;
+                    margin: auto;
+                    opacity: .6;
+                    border-bottom: 1px solid $banner-interview-color;
+                    // bottom: .30em;
+                    bottom: 7px;
+                    // transition: all 1s;
+                }
+            &:hover:after {
+                width: 0%;
+                // border-bottom-width: 1px;  
+            }    
+        }
+        a:hover {
+            background-color: white;
+            color: $banner-interview-color !important;
+            opacity: .81;
+        }
+    }
+    
+}

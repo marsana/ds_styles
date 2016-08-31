@@ -1,0 +1,7 @@
+/ Пример использования:
+/ = partial :ds_get_consultation_button_module, locals: {get_cons_class:".op_book"}
+
+
+
+.ds_get-consultation-button
+    %a.popUp{:href => "#", :data => { class: get_cons_class}} Получить&nbsp;консультацию

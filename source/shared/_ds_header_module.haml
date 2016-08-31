@@ -1,0 +1,24 @@
+/ Пример использования:
+/ = partial :ds_header_module, locals: {substrate: true, title_type: "Бакалавриат", get_cons_class: ".op_book", title: "Мода", share_link:"fashion"}
+
+.ds_header-module
+
+	.header-wrapper{class: (substrate && !image_path.blank?) ? "header-image-back" : "", style: (substrate && !image_path.blank?) ?  "background-image: url(\"#{image_path}\");" : ""}
+
+		- if !substrate && !image_path.blank?
+			.header-image-tag
+				= image_tag image_path
+
+		.header-title
+			- if !title_type.blank?
+				.header-title-type= title_type
+
+			- if !title.blank?
+				%h1= title
+
+			- if !share_link.blank?
+				= partial :ds_share_arrow_module, locals: {link: share_link}
+
+		- if !get_cons_class.blank?
+			= partial :ds_get_consultation_button_module, locals: {get_cons_class:get_cons_class}
+		

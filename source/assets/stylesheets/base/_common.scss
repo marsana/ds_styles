@@ -1,0 +1,25 @@
+body{
+  // padding-top: 50px;
+  font: 14px/20px $font-main;
+  color: $color-main;
+}
+
+.clear {
+  &:before {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
+
+
+a.magistracy-color-link {
+    color: #000000;
+    &:hover {
+        color:  #538DFF;
+    }
+}

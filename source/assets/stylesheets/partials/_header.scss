@@ -1,0 +1,86 @@
+.ds_header-module {
+    position: relative;
+    min-height: 100px;
+    color: black;
+
+    .header-image-back {
+        min-height: 760px;
+        max-width: 1440px;
+        margin: 0 auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center; 
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+    }
+
+    .header-image-back .header-title {
+        padding-left: 30px;
+        padding-bottom: 20px;
+    }
+    .header-image-back .ds_get-consultation-button {
+        padding-right: 30px;
+        margin-bottom: 50px;
+    }
+
+    .header-image-tag img {
+
+    }
+
+
+
+    .header-title-type {
+        font-family: 'Baskerville',serif;
+        font-size: 24px;
+        line-height: 41px;
+        font-style: italic;
+        font-weight: normal;
+        text-transform: lowercase;
+        display: block;
+        margin-bottom: 0px;
+    }
+
+
+    h1 {
+        font-size: 36px!important;
+        line-height: 30px!important;
+        margin-top: 10px;
+        margin-bottom: 25px;
+
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+// @media (max-width: 768px){
+//     .header {
+//         min-height: 60px;
+//         margin-bottom: 10px;
+//         position: static;
+//     }
+//     .header h1 {
+//         font-size: 25px;
+//         line-height: 26px;
+//         float: left;
+//         padding-left: 55px;
+//         margin-top: 10px;
+//         margin-bottom: 15px;
+//     }
+//     .header .get-consultation-button {
+//         position: static;
+//     }
+// }

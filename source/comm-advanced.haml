@@ -1,0 +1,103 @@
+---
+project: comm-advanced
+title: Коммуникационный дизайн. Level + (Продвинутый уровень) - Магистратура Школы дизайна НИУ ВШЭ
+titleContent: Магистерская программа «Коммуникационный дизайн»
+description: "Программа разработана для практикующих дизайнеров, которые хотят повысить свою квалификацию и&nbsp;продвинуться на&nbsp;новый профессиональный уровень."
+---
+= partial :action
+.container
+    = image_tag "data/mag_02.png", class: "mag-header-image"
+.container.bachelor.magistracy.main.profile-header
+    .row.header
+        .row
+            .col-lg-12.col-md-8.col-sm-8.bottom
+                %h1
+                    %span 
+                    Коммуникационный дизайн. Level&nbsp;+ (Продвинутый уровень)
+                = partial :header_share, locals: {link: "comm-advanced"}
+.hse-menu-bachelor 
+.container.bachelor.magistracy.profile.comm-advanced
+    .content.about-program.text-with-banner
+        .row
+            .col-lg-7.col-md-8.about-profile-program
+                .mm-edi{data:{name:'mag_advanced_declaration_text'}}= "<%= block 'mag_advanced_declaration_text' %>" 
+        .row.decoration-line-wrapper
+            .decoration-line.col-md-pull-1
+            .col-lg-7.col-md-8.about-profile-program
+                .mm-edi{data:{name:'mag_advanced_intro_text'}}= "<%= block 'mag_advanced_intro_text' %>"
+                = partial :creative_map, locals: {link: "http://creativemap.hse.ru/timetable/1213"}
+            = partial :menu_in_body 
+    .content.about-profile                
+        .row                
+            .col-md-12.banner-full.banner-interview.substrate.substrate-banner
+                .th-slider.swiper-container
+                    .swiper-wrapper
+                        .swiper-slide{style: "background-image: url(\"#{image_path('comm-advanced/substrate-banner.png')}\");"}
+                            .col-md-offset-1.col-md-2.banner-content-wrapper
+                                .banner-title
+                                    %h3 
+                                        Денис Башев
+                                .banner-content
+                                    .mm-edi{data:{name:'mag_advanced_bashev_text'}}= "<%= block 'mag_advanced_bashev_text' %>"
+                        .swiper-slide{style: "background-image: url(\"#{image_path('comm-basic/substrate-banner.png')}\");"}
+                            .col-md-offset-1.col-md-2.banner-content-wrapper{style: "color: #000;"}
+                                .banner-title
+                                    %h3 
+                                        Эрик Белоусов 
+                                .banner-content
+                                    .mm-edi{data:{name:'mag_advanced_belousov_text'}}= "<%= block 'mag_advanced_belousov_text' %>"
+                        .swiper-slide{style: "background-image: url(\"#{image_path('comm-basic/substrate-banner2.png')}\"); background-size: cover;"}
+                            .col-md-offset-1.col-md-2.banner-content-wrapper{style: "color: #000;"}
+                                .banner-title
+                                    %h3 
+                                        Игорь Гурович 
+                                .banner-content
+                                    .mm-edi{data:{name:'mag_advanced_gurovich_text'}}= "<%= block 'mag_advanced_gurovich_text' %>"
+                        .swiper-slide{style: "background-image: url(\"#{image_path('comm-advanced/substrate-banner2.png')}\"); background-size: cover;"}
+                            .col-md-offset-1.col-md-2.banner-content-wrapper{style: "color: #000;"}
+                                .banner-title
+                                    %h3 
+                                        Сергей Клещев
+                                .banner-content
+                                    .mm-edi{data:{name:'mag_advanced_kleshov_text'}}= "<%= block 'mag_advanced_kleshov_text' %>"
+                        .swiper-slide{style: "background-image: url(\"#{image_path('comm-basic/substrate-banner3.png')}\"); background-size: cover;"}
+                            .col-md-offset-1.col-md-2.banner-content-wrapper
+                                .banner-title
+                                    %h3 
+                                        Андрей Кулагин
+                                .banner-content
+                                    .mm-edi{data:{name:'mag_advanced_kulagin_text'}}= "<%= block 'mag_advanced_kulagin_text' %>"
+                        .swiper-slide{style: "background-image: url(\"#{image_path('comm-basic/substrate-banner5.png')}\"); background-size: cover;"}
+                            .col-md-offset-9.col-md-2.banner-content-wrapper{style: "color: #000;"}
+                                .banner-title
+                                    %h3 
+                                        Арсений Сергеев
+                                .banner-content
+                                    .mm-edi{data:{name:'mag_advanced_sergeev_text'}}= "<%= block 'mag_advanced_sergeev_text' %>"
+                        .swiper-slide{style: "background-image: url(\"#{image_path('comm-basic/substrate-banner4.png')}\"); background-size: cover;"}
+                            .col-md-offset-1.col-md-2.banner-content-wrapper{style: "color: #000;"}
+                                .banner-title
+                                    %h3 
+                                        Наталья Шендрик
+                                .banner-content
+                                    .mm-edi{data:{name:'mag_advanced_shendrik_text'}}= "<%= block 'mag_advanced_shendrik_text' %>"
+                    .toRignt.swiper-button-next
+    .content.practice
+        .row.decoration-line-wrapper
+            .decoration-line.col-md-pull-1
+            .col-lg-7.col-md-8.practice-content
+                .mm-edi{data:{name:'mag_advanced_exam_text'}}= "<%= block 'mag_advanced_exam_text' %>"
+                .get-consultation-button
+                    %a.hse-menu__button.popUp{:href => "#", :data => { class: ".op_levelUp"}} Получить&nbsp;консультацию
+            .col-lg-3.col-md-4.col-lg-offset-2.col-sm-12.col-xs-12
+                .bachelor-info.bachelor-info-additional.bachelor-info-additional-second
+                    .info-item
+                        .mm-edi{data:{name:'mag_advanced_abitur_text'}}= "<%= block 'mag_advanced_abitur_text' %>"
+                    = partial :abitur_info
+    .content.practice
+        .row                
+            .col-lg-7.col-md-8
+                %p 
+                    %a{href: "http://design.hse.ru/magistracy2015", style: "color: rgb(27, 104, 255);"} Магистратура 2015        
+= "<%= metrics_render %>"
+= "<%= admin_script %>"

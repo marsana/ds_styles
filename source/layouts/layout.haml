@@ -1,0 +1,34 @@
+!!!
+%html
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:name => "viewport", :content => "width=device-width"}/
+    %meta{property: "og:title", content: data.page.titleContent}
+    %meta{property: "og:description", content: data.page.description}
+    %meta{property: "og:image", content: "http://design.hse.ru/mag2016/assets/images/#{data.page.project}/thumb.jpg"}
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+    %title= data.page.title
+
+    - stylemain = "http://design.hse.ru/mag2016/assets/stylesheets/s.css"
+    - stylemain1 = "s"
+    - stylepage = "http://design.hse.ru/mag2016/assets/stylesheets/" + data.page.project + ".css"
+    - stylepage1 = data.page.project
+    
+    = stylesheet_link_tag stylemain1
+    = stylesheet_link_tag stylepage1
+
+
+    = '<meta hello>'
+    = javascript_include_tag "lib/modernizr"
+
+
+    <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=KL*2BpBa1SkFEuC/zX0av13eo5TAvqIV5tEZmL4Sv2kjAV5Q46MrFwMBCaosxkjFMVApCUE7x6yrFJctVZSKOuuz5Fz7PC9abCJ8VEwDKf7B7ycthzVfJ*bdtXH6q3g5CNOgzsAwNp9CLhBM9oWQ4u0Nq4TDkNwkdA3UkTBATFg-';</script>
+    <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n; n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0; t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '1767557126790523'); fbq('track', "PageView");</script> 
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1767557126790523&ev=PageView&noscript=1"/></noscript>
+
+  %body{:class => data.page.page_class}
+    = yield
+
+    %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"}
+    <script type="text/javascript" src="http://vkontakte.ru/js/api/share.js?9" charset="windows-1251"></script>
+    = javascript_include_tag "x"
