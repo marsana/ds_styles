@@ -1,24 +1,16 @@
 .ds_share-arrow {
-    display: inline-block;
-
+    display: block;
     fill: $color-main;
+    width: 180px;
     transition: all .2s;
-    // &:hover {
-    //  fill: $hover-link-color;
-    // }
 }
 .ds_header-module .ds_share-arrow {
     margin: 0;
     padding: 0;
-    // margin-bottom: 10px;
-    // margin-left: 10px;
     position: relative;
-    // left: -5px;
     top: 0px;
-    // fill: $color-main !important;
     transition: all .2s;
     svg {
-        // fill: $banner-interview-color;
         width: 20px;
         height: 14px;
     }    
@@ -57,21 +49,21 @@
 }
 
 
-@media (max-width: 768px){
-    .ds_header-module .ds_share-arrow {
-        margin: 0;
-        padding: 0;
-        margin-left: 40px;
-        bottom: 0;
-        margin-top: 15px;
-    }
-}
+    // @media (max-width: 768px){
+    //     .ds_header-module .ds_share-arrow {
+    //         margin: 0;
+    //         padding: 0;
+    //         margin-left: 40px;
+    //         bottom: 0;
+    //         margin-top: 15px;
+    //     }
+    // }
 
-@media (max-width: 470px){
-    .ds_header-module .ds_share-arrow {
-        position: absolute;
-        display: block;
-        top: 70px;
-        left: 21px;
-    }
-}
+    // @media (max-width: 470px){
+    //     .ds_header-module .ds_share-arrow {
+    //         position: absolute;
+    //         display: block;
+    //         top: 70px;
+    //         left: 21px;
+    //     }
+    // }

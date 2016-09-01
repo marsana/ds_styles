@@ -81,13 +81,11 @@
     }
 }
 
-@media (max-width: 1200px) {
-
-
-    .ds_get-consultation-button a {
-        width: 100% !important;
-    }
-}
+// @media (max-width: 1200px) {
+//     .ds_get-consultation-button a {
+//         width: 100% !important;
+//     }
+// }
 
 
 @media (max-width: 992px) {
@@ -123,14 +121,14 @@
 
         a {
             background: none;
-            color: #ffb100 !important;
+            color: black !important;
             // text-decoration: underline;
             margin-top: -15px;
             text-align: left;
             border: none;
             // font-size: 60px !important;
             // line-height: 60px !important;
-            padding-left: 55px;
+            padding-left: 30px; 
             text-shadow: 1px 0px 0px white,
                            1px 0px 0px white,
                            -1px 0px 0px white,
@@ -152,10 +150,11 @@
                     display: block;
                     position: relative;
                     z-index: -1;
-                    width: 106%;
+                    width: 90%;
+                    left: -9px;
                     margin: auto;
                     opacity: .6;
-                    border-bottom: 1px solid $banner-interview-color;
+                    border-bottom: 1px solid black;
                     // bottom: .30em;
                     bottom: 7px;
                     // transition: all 1s;
@@ -173,3 +172,17 @@
     }
     
 }
+
+@media (max-width: 550px){
+    .to-line.ds_get-consultation-button {
+        a {
+            padding-left: 15px; 
+            margin-bottom: 20px;
+            &:after {
+                    width: 83%;
+                    left: -16px;
+            }
+        }
+    }
+}
+

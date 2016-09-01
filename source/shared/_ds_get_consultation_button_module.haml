@@ -1,7 +1,8 @@
 / Пример использования:
 / = partial :ds_get_consultation_button_module, locals: {get_cons_class:".op_book"}
 
+- if not defined? spec_class
+	- spec_class = ""
 
-
-.ds_get-consultation-button
-    %a.popUp{:href => "#", :data => { class: get_cons_class}} Получить&nbsp;консультацию
+.ds_get-consultation-button{class: spec_class}
+	%a.popUp{:href => "#", :data => { class: get_cons_class}} Получить&nbsp;консультацию
